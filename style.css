@@ -1,0 +1,113 @@
+/* ===== Global Styles ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #4f46e5;
+    color: white;
+    padding: 20px;
+    border-bottom: 4px solid #4338ca;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #4338ca;
+}
+
+/* ===== Main Content ===== */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ===== Sections ===== */
+section {
+    background-color: white;
+    margin-bottom: 30px;          /* margin */
+    padding: 20px;                /* padding */
+    border: 1px solid #d1d5db;    /* border */
+    border-radius: 6px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+/* ===== About Section Image ===== */
+section img {
+    display: block;
+    margin: 10px 0;
+    border-radius: 50%;
+    border: 2px solid #4f46e5;
+}
+
+/* ===== Education Article ===== */
+article {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f9fafb;
+    border-left: 4px solid #4f46e5;
+}
+
+/* ===== Skills List ===== */
+#skills ul {
+    padding-left: 20px;
+}
+
+#skills li {
+    margin-bottom: 6px;
+}
+
+/* ===== Contact Section ===== */
+address {
+    font-style: normal;
+}
+
+address a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f2937;
+    color: white;
+    margin-top: 40px;
+}
