@@ -1,1 +1,2 @@
 # internship_day2_task
+This project is a Personal Profile Page developed using semantic HTML5 and styled with an external CSS file. The page presents personal information such as an introduction, education, skills, and contact details in a well-structured and accessible format. The CSS Box Model is effectively used by applying margin, padding, and borders to organize content and improve visual clarity. Semantic elements like header, section, article, and footer enhance readability, maintainability, and accessibility of the webpage.
