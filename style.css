@@ -17,6 +17,9 @@ header {
     color: white;
     padding: 20px;
     border-bottom: 4px solid #4338ca;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header h1 {
@@ -53,10 +56,18 @@ main {
 /* ===== Sections ===== */
 section {
     background-color: white;
-    margin-bottom: 30px;          /* margin */
-    padding: 20px;                /* padding */
-    border: 1px solid #d1d5db;    /* border */
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #d1d5db;
     border-radius: 6px;
+    scroll-margin-top: 120px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
 }
 
 section h2 {

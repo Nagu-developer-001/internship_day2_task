@@ -27,49 +27,50 @@
     <main>
 
         <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="D:\Task_dat_01\internship_day2_task\WhatsApp Image 2025-11-07 at 22.15.29_b9c765b1.jpg" alt="Profile photo of Nagabhushana" width="150">
-            <p>
-                Hello! I am a passionate web development learner interested in
-                building clean and accessible web applications using modern HTML,
-                CSS, and JavaScript.
-            </p>
-        </section>
+        <!-- About Section -->
+<section id="about" onclick="window.location.href='about.html'">
+    <h2>About Me</h2>
+    <img src="D:\Task_dat_01\internship_day2_task\WhatsApp Image 2025-11-07 at 22.15.29_b9c765b1.jpg" alt="Profile photo of Nagabhushana" width="150">
+    <p>
+        Hello! I am a passionate web development learner interested in
+        building clean and accessible web applications using modern HTML,
+        CSS, and JavaScript.
+    </p>
+</section>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <article>
-                <h3>Bachelor's Degree</h3>
-                <p>
-                    Bachelor of Computer Applications (BCA)  
-                    <br>
-                    LB College,Karnataka, India
-                </p>
-            </article>
-        </section>
+<!-- Education Section -->
+<section id="education" onclick="window.location.href='education.html'">
+    <h2>Education</h2>
+    <article>
+        <h3>Bachelor's Degree</h3>
+        <p>
+            Bachelor of Computer Applications (BCA)  
+            <br>
+            LB College,Karnataka, India
+        </p>
+    </article>
+</section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5 & Semantic Markup</li>
-                <li>CSS Basics</li>
-                <li>JavaScript Fundamentals</li>
-                <li>MySQL</li>
-                <li>Problem Solving</li>
-            </ul>
-        </section>
+<!-- Skills Section -->
+<section id="skills" onclick="window.location.href='skills.html'">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5 & Semantic Markup</li>
+        <li>CSS Basics</li>
+        <li>JavaScript Fundamentals</li>
+        <li>MySQL</li>
+        <li>Problem Solving</li>
+    </ul>
+</section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <address>
-                <p>Email: <a href="mailto:example@email.com">nagabhoshanabhat@gmail.com</a></p>
-                <p>Phone: +91 80880 76030</p>
-            </address>
-        </section>
+<!-- Contact Section -->
+<section id="contact" onclick="window.location.href='contact.html'">
+    <h2>Contact Me</h2>
+    <address>
+        <p>Email: <a href="mailto:example@email.com">nagabhoshanabhat@gmail.com</a></p>
+        <p>Phone: +91 80880 76030</p>
+    </address>
+</section>
 
     </main>
 
@@ -79,4 +80,21 @@
     </footer>
 
 </body>
+<script>
+document.querySelectorAll('section').forEach(section => {
+    section.style.cursor = 'pointer';
+    
+    const hiddenContent = section.querySelector('.hidden-content');
+    if (hiddenContent) {
+        hiddenContent.style.display = 'none';
+    }
+    
+    section.addEventListener('click', function() {
+        const hidden = this.querySelector('.hidden-content');
+        if (hidden) {
+            hidden.style.display = hidden.style.display === 'none' ? 'block' : 'none';
+        }
+    });
+});
+</script>
 </html>
