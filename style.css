@@ -122,3 +122,92 @@ footer {
     color: white;
     margin-top: 40px;
 }
+/* ===== Responsive Design ===== */
+
+/* Tablets (<= 900px) */
+@media (max-width: 900px) {
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
+
+/* Mobile Devices (<= 600px) */
+@media (max-width: 600px) {
+
+    /* Header */
+    header h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Main layout */
+    main {
+        margin: 15px auto;
+        padding: 0 12px;
+    }
+
+    /* Sections */
+    section {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    /* Profile image */
+    section img {
+        width: 120px;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    /* Article */
+    article {
+        padding: 12px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+/* Small Mobile Devices (<= 400px) */
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+
+    section {
+        padding: 12px;
+    }
+}
